@@ -87,7 +87,7 @@ export default function HomeHero() {
           <div className="absolute inset-4 rounded-full bg-gradient-to-br from-white to-leaf-50 shadow-warm" />
           <div className="absolute inset-0 grid place-items-center">
             <div className="relative w-[80%] aspect-square animate-float">
-              <Image src="/logo.png" alt="Mầm Xanh Preschool" fill priority />
+              <Image src="/logo.png" alt="Mầm Xanh Preschool" fill priority style={{ objectFit: 'contain' }} />
             </div>
           </div>
           <Sparkle className="absolute top-6 right-10 w-7 animate-spin-slow" />

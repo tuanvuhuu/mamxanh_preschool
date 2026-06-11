@@ -14,7 +14,7 @@ export default function Logo({ variant = 'dark', withText = true, size = 48 }: P
   return (
     <Link href="/" className="flex items-center gap-3 group">
       <span
-        className="relative shrink-0 transition-transform duration-300 group-hover:rotate-[8deg]"
+        className="relative shrink-0 transition-transform duration-300 group-hover:rotate-[8deg] flex-none"
         style={{ width: size, height: size }}
       >
         <Image
@@ -23,6 +23,7 @@ export default function Logo({ variant = 'dark', withText = true, size = 48 }: P
           width={size}
           height={size}
           priority
+          style={{ objectFit: 'contain' }}
         />
       </span>
       {withText && (
