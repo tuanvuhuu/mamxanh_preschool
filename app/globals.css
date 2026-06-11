@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-ink-700 font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    @apply font-display text-ink-900 leading-tight;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply w-full max-w-[1200px] mx-auto px-4 md:px-6;
+  }
+
+  .eyebrow {
+    @apply inline-block uppercase tracking-[0.14em] text-xs font-bold
+           text-orange-500 bg-orange-50 px-3 py-1 rounded-full;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold
+           transition-all duration-200 whitespace-nowrap;
+  }
+  .btn-primary {
+    @apply bg-orange-400 text-white shadow-warm hover:bg-orange-500
+           hover:-translate-y-0.5 hover:shadow-ring;
+  }
+  .btn-leaf {
+    @apply bg-leaf-600 text-white shadow-leaf hover:bg-leaf-700
+           hover:-translate-y-0.5;
+  }
+  .btn-light {
+    @apply bg-white text-orange-500 hover:bg-sunny-soft;
+  }
+  .btn-outline-light {
+    @apply border-2 border-white/60 text-white hover:bg-white/15 hover:border-white;
+  }
+
+  .text-gradient-brand {
+    @apply bg-clip-text text-transparent
+           bg-[linear-gradient(135deg,#F58220_0%,#4CAF50_100%)];
+  }
+}
