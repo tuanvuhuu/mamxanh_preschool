@@ -53,7 +53,7 @@ export default function TeachersPage() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-1">{t.name}</h3>
-                    <p className="text-sm font-semibold" style={{ color: t.color }} className="mb-3">
+                    <p className="text-sm font-semibold mb-3" style={{ color: t.color }}>
                       {t.role}
                     </p>
                     <p className="text-sm text-ink-500 leading-relaxed">{t.bio}</p>

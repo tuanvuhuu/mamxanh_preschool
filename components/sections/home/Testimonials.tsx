@@ -47,7 +47,7 @@ export default function Testimonials() {
               className="relative bg-white rounded-4xl p-7 shadow-soft hover:shadow-warm hover:-translate-y-1 transition-all"
             >
               <QuoteMark className="w-10 h-10 mb-3" color={q.color} />
-              <p className="text-ink-700 leading-relaxed mb-5 italic">"{q.quote}"</p>
+              <p className="text-ink-700 leading-relaxed mb-5 italic">&quot;{q.quote}&quot;</p>
               <div className="flex items-center gap-3 pt-4 border-t border-leaf-100">
                 <span
                   className="w-12 h-12 rounded-full grid place-items-center font-display font-extrabold text-lg"

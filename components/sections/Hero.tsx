@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-const Cloud = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 200 80" className={className} aria-hidden>
+const Cloud = ({ className, style }: { className?: string; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 200 80" className={className} style={style} aria-hidden>
     <path
       fill="#fff"
       d="M40 60c-15 0-25-10-25-22s11-21 24-20c4-12 16-18 28-15 8-9 22-9 30-2 14-1 26 9 26 22 0 13-11 23-25 23H40z"

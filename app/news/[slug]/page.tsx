@@ -53,7 +53,7 @@ export default function NewsDetailPage({ params }: { params: { slug: string } })
 
               <div className="bg-leaf-50 rounded-4xl p-8 my-10 border-l-4 border-leaf-600">
                 <p className="text-lg font-semibold text-ink-900">
-                  Đây là nội dung chi tiết của bài viết "{post.title}".
+                  Đây là nội dung chi tiết của bài viết &quot;{post.title}&quot;.
                   Phần nội dung chính sẽ được cập nhật với hình ảnh, video và thông tin đầy đủ từ đội ngũ Mầm Xanh.
                 </p>
               </div>
